@@ -24,7 +24,7 @@ function Canvas(id) {
 	this.drawPixel = function(x, y, r, g, b, a) {
 		var index = (x + y * this.width) * 4;
 
-		this.canvasData.data[index + 0] = r;
+		this.Data.data[index + 0] = r;
 		this.canvasData.data[index + 1] = g;
 		this.canvasData.data[index + 2] = b;
 		this.canvasData.data[index + 3] = a;
