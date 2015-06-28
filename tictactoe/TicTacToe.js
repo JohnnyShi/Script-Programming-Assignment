@@ -78,6 +78,7 @@ function TicTacToe(ai) {
 		return board[0][0] != 0 && board[1][0] != 0 && board[2][0] != 0
 			&& board[0][1] != 0 && board[1][1] != 0 && board[2][1] != 0
 			&& board[0][2] != 0 && board[1][2] != 0 && board[2][2] != 0
+                        
 	}
 	
 	this.switchTurns = function() {

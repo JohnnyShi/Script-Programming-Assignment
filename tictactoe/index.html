@@ -8,16 +8,16 @@
         <meta name="Author" content="Johnny Shi" />
         <script src="http://cdn.staticfile.org/jquery/2.1.1-rc2/jquery.min.js" ></script>
         <script type="text/javascript" src="Canvas.js"></script>        
-		<script type="text/javascript" src="Util.js"></script>  
-		<script type="text/javascript" src="Pencil.js"></script>   
-		<script type="text/javascript" src="TicTacToe.js"></script>  
-		<script type="text/javascript" src="AI.js"></script>
+	<script type="text/javascript" src="Util.js"></script>  
+	<script type="text/javascript" src="Pencil.js"></script>   
+	<script type="text/javascript" src="TicTacToe.js"></script>  
+	<script type="text/javascript" src="AI.js"></script>
         <script type="text/javascript">
 			var ttt;
             $(document).ready(function() {
 				ttt = new TicTacToe(new AI());
 				ttt.drawBoard();
-				ttt.useAI = false;
+				ttt.useAI = true;
 					
             });
         </script>
@@ -29,7 +29,6 @@
             <table>
 		<tr>
                     <td><form><input type="button" onClick="history.go(0)" value="New"/></form></td>
-                    <td><div class="fb-like" data-href="http://www.ken-soft.com/tictactoe/" data-send="false" data-layout="button_count" data-width="120" data-show-faces="false"></div></td>
                     <td><span id="turn">X</span>'s Turn&nbsp;&nbsp;</td>
                     <td><a href="http://mathwithbaddrawings.com/2013/06/16/ultimate-tic-tac-toe/" target="_blank">Rules</a>&nbsp;&nbsp;</td>
                     <td><span id="msg" style="font-size:11px"></span></td>
